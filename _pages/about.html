@@ -1,0 +1,31 @@
+---
+permalink: /
+title: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
+<p>
+  I am a Research Assistant at Queen Mary University of London. My research interests include human-robot interaction and computer vision for robotics. Previously, I was a PhD student at Queen Mary University of London working with 
+  <a href="http://eecs.qmul.ac.uk/~coh">Dr. Changjae Oh</a> and 
+  <a href="https://people.epfl.ch/andrea.cavallaro?lang=en">Prof. Andrea Cavallaro</a> 
+  on hand-object reconstruction from images and human-to-robot handover. I received an MSc in Artificial Intelligence from Queen Mary University of London and a BSc in Physics from Imperial College London.
+</p>
+
+
+<h2>News</h2>
+<ul>
+  <li>[04/25] Started as a research assistant at Queen Mary University of London</li>
+  <li>[03/25] PhD viva passed with minor corrections</li>
+  <li>[06/23] Started a 6-months research internship at Idiap Research Institute, Switzerland</li>
+  <li>[04/20] Started as a PhD student at Queen Mary University of London</li>
+</ul>
+
+<h2>Publications</h2>
+{% include base_path %}
+
+{% for post in site.publications reversed %}
+  {% include archive-single.html %}
+{% endfor %}
