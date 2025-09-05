@@ -74,15 +74,15 @@
         {% if post.siteurl %} | {% endif %}
           {% endif %}
           {% if post.siteurl %}
-        <a href="{{ post.siteurl }}">Project</a>
+        <a href="{{ post.siteurl }}">Webpage</a>
           {% endif %}
         </p>
       {% elsif post.paperurl and post.siteurl %}
-        <p><a href="{{ post.paperurl }}">Paper</a> | <a href="{{ post.siteurl }}">Project</a></p>
+        <p><a href="{{ post.paperurl }}">Paper</a> | <a href="{{ post.siteurl }}">Webpage</a></p>
       {% elsif post.paperurl %}
         <p><a href="{{ post.paperurl }}">Paper</a></p>
       {% elsif post.siteurl %}
-        <p><a href="{{ post.siteurl }}">Project</a></p>
+        <p><a href="{{ post.siteurl }}">Webpage</a></p>
       {% endif %}
     </div>
   </article>
