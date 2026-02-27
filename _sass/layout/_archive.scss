@@ -74,6 +74,11 @@
   }
 }
 
+/* Align image top with text top when teaser is present */
+.archive__item--with-teaser .archive__item-title {
+  margin-top: 0;
+}
+
 .archive__item:hover {
   .archive__item-teaser {
     box-shadow: 0 0 10px rgba(#000, 0.25);

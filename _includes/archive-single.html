@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item archive__item--flex" itemscope itemtype="http://schema.org/CreativeWork" style="display: flex; align-items: flex-start; gap: 1.5em;">
+  <article class="archive__item archive__item--flex{% if teaser %} archive__item--with-teaser{% endif %}" itemscope itemtype="http://schema.org/CreativeWork" style="display: flex; align-items: flex-start; gap: 1.5em;">
     {% if teaser %}
       <div class="archive__item-teaser" style="flex: 0 0 auto; max-width: 180px;">
         <img src=
